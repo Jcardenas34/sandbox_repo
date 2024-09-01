@@ -13,8 +13,10 @@ import os
 
 def main(args):
 
-    print("Testing")
-
+#    print("Testing")
+    with open(args.infile) as infile:
+        for k in infile.readlines():
+            print(k)
 
 
 if __name__ == "__main__":
